@@ -53,6 +53,7 @@ body {
   color: red;
 }
 
+/* Hanya untuk tugas tekweb saja, karena website ini tidak akan menggunakan fitur login */
 .container {
   position: absolute;
   top: 50%;
