@@ -279,7 +279,7 @@ body {
 
   body {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
   }
 }
 /* card end */
