@@ -1,8 +1,10 @@
 <?php
-$servername = "localhost";
-$database = "data_users";
-$username = "root";
+
+// koneksi database
+$server = "localhost";
+$user = "root";
 $password = "";
+$database = "warisan_budaya";
 
-$conn = mysqli_connect($servername, $username, $password, $database);
-
+// buat koneksi
+$koneksi = mysqli_connect($server, $user, $password, $database) or die(mysqli_error($koneksi));
