@@ -151,6 +151,13 @@ body {
 }
 /* card end */
 
+/* kritik dan saran start */
+.container-saran{
+  background-color: #999999;
+  padding: 15px;
+}
+/* kritik dan saran end */
+
 
 /* footer start */
 .footer{
