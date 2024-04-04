@@ -291,6 +291,12 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.container-saran #nama {
+  margin-left: 5rem;
+  margin-bottom: 0.5rem;
+}
+
 /* kritik dan saran end */
 
 /* footer start */
