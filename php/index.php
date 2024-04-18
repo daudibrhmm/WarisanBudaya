@@ -1,6 +1,7 @@
 <?php
 // manggil koneksi database
 include "koneksi.php";
+include "crud.php";
 
 
 // Jika tombol ditekan
@@ -17,8 +18,6 @@ $museumMulawarman = '../Website Warisan Budaya/image/museummulawarman.jpg';
 $bentengRotterdam = '../Website Warisan Budaya/image/bentengrotterdam.jpg';
 $bentengFortDuBus = '../Website Warisan Budaya/image/bentengfortdubus.jpg';
 $museumSumba = '../Website Warisan Budaya/image/museumsumba.jpg';
-
-echo '<style> .card-img-hover monas { background-image: url("' . $monas . '"); }</style>';
 ?>
 
 <!DOCTYPE html>
@@ -29,7 +28,7 @@ echo '<style> .card-img-hover monas { background-image: url("' . $monas . '"); }
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <title>Warisan Jawa</title>
+  <title>Warisan Budaya</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -96,7 +95,7 @@ echo '<style> .card-img-hover monas { background-image: url("' . $monas . '"); }
 
       <div class="card-info">
         <span class="card-category">Bangunan</span>
-        <h3 class="card-title">Monumen Nasional, DKI Jakarta</h3>
+        <h5 class="card-title">Monumen Nasional, DKI Jakarta</h5>
         <p class="card-desc">Monas adalah ikon kota Jakarta, Indonesia. Monumen setinggi 132 meter ini didirikan untuk
           mengenang perjuangan bangsa Indonesia dalam merebut kemerdekaan dari penjajahan Belanda.</p>
       </div>
@@ -111,7 +110,7 @@ echo '<style> .card-img-hover monas { background-image: url("' . $monas . '"); }
       </a>
       <div class="card-info">
         <span class="card-category">Bangunan</span>
-        <h3 class="card-title">Rumah Gadang, Sumatra Barat</h3>
+        <h5 class="card-title">Rumah Gadang, Sumatra Barat</h5>
         <p class="card-desc">Rumah Gadang adalah rumah tradisional Minangkabau yang dapat ditemui di wilayah
           Minangkabau, Sumatra Barat, Indonesia. Rumah ini memiliki ciri khas atap melengkung seperti tanduk kerbau yang
           indah.</p>
@@ -126,7 +125,7 @@ echo '<style> .card-img-hover monas { background-image: url("' . $monas . '"); }
       </a>
       <div class="card-info">
         <span class="card-category">Museum</span>
-        <h3 class="card-title">Museum Mulawarman, Kalimantan Timur</h3>
+        <h5 class="card-title">Museum Mulawarman, Kalimantan Timur</h5>
         <p class="card-desc">Terletak di Kota Tenggarong, Kalimantan Timur, Indonesia, Museum Mulawarman adalah museum
           yang menggambarkan sejarah dan kekayaan budaya suku Dayak dan kehidupan di Kalimantan Timur.</p>
       </div>
@@ -142,7 +141,7 @@ echo '<style> .card-img-hover monas { background-image: url("' . $monas . '"); }
       </a>
       <div class="card-info">
         <span class="card-category">Bangunan</span>
-        <h3 class="card-title">Benteng Rotterdam, Sulawesi Selatan</h3>
+        <h5 class="card-title">Benteng Rotterdam, Sulawesi Selatan</h5>
         <p class="card-desc">Dikenal sebagai Benteng Makassar atau Benteng Ujung Pandang yang terletak di Kota Makassar,
           Sulawesi Selatan, Indonesia. Benteng ini dibangun oleh Belanda pada abad ke-17 sebagai benteng pertahanan.</p>
       </div>
@@ -156,7 +155,7 @@ echo '<style> .card-img-hover monas { background-image: url("' . $monas . '"); }
       </a>
       <div class="card-info">
         <span class="card-category">Bangunan</span>
-        <h3 class="card-title">Benteng Fort Du Bus, Papua Barat</h3>
+        <h5 class="card-title">Benteng Fort Du Bus, Papua Barat</h5>
         <p class="card-desc">Terletak di Bukittinggi, Sumatra Barat, Indonesia, benteng ini adalah sisa-sisa peninggalan
           Belanda yang dibangun pada abad ke-19.</p>
       </div>
@@ -170,7 +169,7 @@ echo '<style> .card-img-hover monas { background-image: url("' . $monas . '"); }
       </a>
       <div class="card-info">
         <span class="card-category">Museum</span>
-        <h3 class="card-title">Museum Sumba, Nusa Tenggara Timur</h3>
+        <h5 class="card-title">Museum Sumba, Nusa Tenggara Timur</h5>
         <p class="card-desc">Terletak di Waingapu, Sumba Timur, Nusa Tenggara Timur, Indonesia, museum ini adalah tempat
           untuk mengeksplorasi kebudayaan dan warisan budaya unik dari pulau Sumba.</p>
       </div>
@@ -179,20 +178,32 @@ echo '<style> .card-img-hover monas { background-image: url("' . $monas . '"); }
   <!-- Card End -->
 
   <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-    <button type="submit" class="btn btn-secondary mb-3" name="redirect"> Edit CRUD</button>
+    <button type="submit" class="btn btn-secondary mb-3 ms-3" name="redirect"> Edit CRUD</button>
   </form>
 
   <!-- Kritik dan Saran Start -->
   <div class="container-saran">
-    <form action="">
-      <h1>Kritik dan Saran</h1>
-      <label for="">Nama:</label>
-      <input type="text" name="nama" id="nama"> <br>
-      <label for="">Kritik dan Saran:</label>
-      <input type="text" name="saran" id="saran">
+    <form  method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+      <h2 class="fw-bold">FEEDBACK</h2>
+      <div class="mb-3">
+        <label for="namaUser" class="form-label">Name :</label>
+        <input type="text" class="form-control" name="namaUser" aria-describedby="nameHelp">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address :</label>
+        <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="name@example.com">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="feedback" class="form-label">Feedback :</label>
+        <textarea class="form-control" name="feedback" rows="3"></textarea>
+      </div>
+
+      <button type="submit" name="sent" class="btn btn-primary">Sent</button>
     </form>
   </div>
   <!-- Kritik dan Saran End -->
+
 
   <!-- Footer Start -->
   <div class="footer">

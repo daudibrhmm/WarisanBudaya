@@ -13,12 +13,12 @@ if (isset($_POST["bsimpan"])) {
     if ($simpan) {
         echo "<script>
         alert('Simpan data Sukses!');
-        document.location='index.php';
+        document.location='halaman_edit.php';
         </script>";
     } else {
         echo "<script>
         alert('Simpan data Gagal!');
-        document.location='index.php';
+        document.location='halaman_edit.php';
         </script>";
     }
 }
@@ -33,12 +33,12 @@ if (isset($_POST["bubah"])) {
     if ($ubah) {
         echo "<script>
         alert('Ubah data Sukses!');
-        document.location='index.php';
+        document.location='halaman_edit.php';
         </script>";
     } else {
         echo "<script>
         alert('Ubah data Gagal!');
-        document.location='index.php';
+        document.location='halaman_edit.php';
         </script>";
     }
 }
@@ -53,11 +53,31 @@ if (isset($_POST["bhapus"])) {
     if ($hapus) {
         echo "<script>
         alert('Hapus data Sukses!');
-        document.location='index.php';
+        document.location='halaman_edit.php';
         </script>";
     } else {
         echo "<script>
         alert('Hapus data Gagal!');
+        document.location='halaman_edit.php';
+        </script>";
+    }
+}
+
+// feedback
+if (isset($_POST["sent"])) {
+
+    // persiapan simpan data baru
+    $sent = mysqli_query($koneksi, "INSERT INTO feedback (namaUser, email, feedback) VALUES ('$_POST[namaUser]', '$_POST[email]', '$_POST[feedback]')");
+
+    // jika simpan sukses
+    if ($sent) {
+        echo "<script>
+        alert('Feedback Sent Successfully!');
+        document.location='index.php';
+        </script>";
+    } else {
+        echo "<script>
+        alert('Feedback Sent Failed!');
         document.location='index.php';
         </script>";
     }
