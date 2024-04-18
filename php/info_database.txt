@@ -1,7 +1,13 @@
 nama database = warisan_budaya
 
-nama tabel = situs_budaya
+tabel 1 = situs_budaya
         kolom1 = id, int, 10, auto increment, primary key
         kolom2 = nama, varchar, 50
         kolom3 = kategori, varchar, 50
         kolom4 = lokasi, varchar, 50
+
+tabel 2 = feedback
+        kolom 1 = id, int, 10, auto increment, primary key
+        kolom 2 = namaUser, varchar, 50
+        kolom 3 = email, varchar, 50
+        kolom 4 = feedback, varchar, 10000
