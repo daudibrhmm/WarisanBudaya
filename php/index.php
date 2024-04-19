@@ -104,7 +104,7 @@ $museumSumba = '../Website Warisan Budaya/image/museumsumba.jpg';
     <article class="card">
       <div class="card-img"></div>
       </div>
-      <a href="#">
+      <a href="Blog/Pulau sumatera/sumatera barat/rumahGadang.php">
         <div class="card-img-hover" style="background-image: url('<?php echo $rumahGadang; ?>')">
         </div>
       </a>
@@ -119,7 +119,7 @@ $museumSumba = '../Website Warisan Budaya/image/museumsumba.jpg';
 
     <article class="card">
       <div class="card-img"></div>
-      <a href="#">
+      <a href="Blog/Pulau Kalimantan/kalimantan Timur/museumMulawarman.php">
         <div class="card-img-hover" style="background-image: url('<?php echo $museumMulawarman; ?>')">
         </div>
       </a>
@@ -135,7 +135,7 @@ $museumSumba = '../Website Warisan Budaya/image/museumsumba.jpg';
   <section class="cards">
     <article class="card">
       <div class="card-img"></div>
-      <a href="#">
+      <a href="Blog/pulau sulawesi/Sulawesi Selatan/bentengRotterdam.php">
         <div class="card-img-hover" style="background-image: url('<?php echo $bentengRotterdam; ?>')">
         </div>
       </a>
