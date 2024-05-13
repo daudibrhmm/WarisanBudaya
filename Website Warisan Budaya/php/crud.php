@@ -1,9 +1,9 @@
 <?php
 
-// panggil koneksi database
+// Memanggil koneksi database
 include "koneksi.php";
 
-// uji jika tombol simpan di klik
+// uji jika tombol 'simpan' di klik
 if (isset($_POST["bsimpan"])) {
 
     // persiapan simpan data baru
@@ -23,7 +23,7 @@ if (isset($_POST["bsimpan"])) {
     }
 }
 
-// uji jika tombol ubah di klik
+// uji jika tombol 'ubah' di klik
 if (isset($_POST["bubah"])) {
 
     // persiapan ubah data 
@@ -49,7 +49,7 @@ if (isset($_POST["bhapus"])) {
     // persiapan hapus data 
     $hapus = mysqli_query($koneksi, "DELETE FROM situs_budaya WHERE id = '$_POST[id]'");
 
-    // jika hapus sukses
+    // jika 'hapus' sukses
     if ($hapus) {
         echo "<script>
         alert('Hapus data Sukses!');
