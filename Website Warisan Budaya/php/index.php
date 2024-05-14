@@ -24,17 +24,12 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Warisan Budaya</title>
-=======
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Warisan Budaya</title>
->>>>>>> 9ba58015dd6f28477daee93187c4628999e083e6
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -99,7 +94,6 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
                 </div>
             </a>
 
-<<<<<<< HEAD
   <!-- Edit Button CRUD START -->
   <div class="btn-crud">
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -127,7 +121,6 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
       </div>
 
       <button type="submit" name="sent">Send</button>
-=======
             <div class="card-info">
                 <span class="card-category">Bangunan</span>
                 <h5 class="card-title">Monumen Nasional, DKI Jakarta</h5>
@@ -221,7 +214,6 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
 
     <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
         <button type="submit" class="btn btn-secondary mb-3 ms-3" name="redirect"> Edit CRUD</button>
->>>>>>> 9ba58015dd6f28477daee93187c4628999e083e6
     </form>
 
     <!-- Kritik dan Saran Start -->
@@ -263,12 +255,9 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
 
     <script src="../Website Warisan Budaya/JS/script.js"></script>
 
-<<<<<<< HEAD
-=======
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
->>>>>>> 9ba58015dd6f28477daee93187c4628999e083e6
 </body>
 
 </html>
