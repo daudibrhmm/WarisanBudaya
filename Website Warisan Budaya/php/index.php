@@ -6,9 +6,9 @@ include "crud.php";
 
 // Jika tombol ditekan
 if (isset($_POST['redirect'])) {
-  // Pindahkan pengguna ke halaman lain
-  header("Location: halaman_edit.php");
-  exit;
+    // Pindahkan pengguna ke halaman lain
+    header("Location: halaman_edit.php");
+    exit;
 }
 
 //bacground image
@@ -24,9 +24,9 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Warisan Budaya</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warisan Budaya</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Warisan Budaya</title>
@@ -93,34 +93,6 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
                 <div class="card-img-hover" style="background-image: url('<?php echo $monas; ?>')">
                 </div>
             </a>
-
-  <!-- Edit Button CRUD START -->
-  <div class="btn-crud">
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-      <button type="submit" name="redirect"> Edit CRUD</button>
-    </form>
-  </div>
-  <!-- Edit Button CRUD END -->
-
-  <!-- Kritik dan Saran Start -->
-  <div class="container-saran">
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-      <h2>FEEDBACK</h2>
-      <div class="input">
-        <label for="namaUser">Name :</label> <br>
-        <input type="text" name="namaUser" aria-describedby="nameHelp" required>
-      </div>
-      <div class="input">
-        <label for="email">Email Address :</label> <br>
-        <input required type="email" name="email" aria-describedby="emailHelp" placeholder="name@example.com">
-        <div id="emailHelp">We'll never share your email with anyone else.</div>
-      </div>
-      <div class="input">
-        <label for="feedback">Feedback :</label> <br>
-        <textarea name="feedback" rows="5" required></textarea>
-      </div>
-
-      <button type="submit" name="sent">Send</button>
             <div class="card-info">
                 <span class="card-category">Bangunan</span>
                 <h5 class="card-title">Monumen Nasional, DKI Jakarta</h5>
@@ -212,9 +184,13 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
     </section>
     <!-- Card End -->
 
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        <button type="submit" class="btn btn-secondary mb-3 ms-3" name="redirect"> Edit CRUD</button>
-    </form>
+    <!-- Edit Button CRUD START -->
+    <div class="btn-crud">
+        <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <button type="submit" name="redirect"> Edit CRUD</button>
+        </form>
+    </div>
+    <!-- Edit Button CRUD END -->
 
     <!-- Kritik dan Saran Start -->
     <div class="container-saran">
@@ -249,7 +225,7 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
 
     <!-- Feather Icons -->
     <script>
-    feather.replace();
+        feather.replace();
     </script>
 
 
@@ -257,7 +233,7 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
