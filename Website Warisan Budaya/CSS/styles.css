@@ -338,8 +338,7 @@ textarea {
 }
 
 .container-saran button:hover {
-  background-color: rgba(0, 0, 255, 0.511);
-  color: black;
+  background-color: rgba(0, 0, 255, 0.46);
   transition: ease-in-out 0.2s;
 }
 

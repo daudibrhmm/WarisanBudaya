@@ -25,7 +25,7 @@ if (isset($_POST['redirect'])) {
 
 <body>
 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-    <button type="submit" class="btn btn-secondary mb-3" name="redirect"> Kembali</button>
+    <button type="submit" class="btn btn-secondary m-3" name="redirect"> Kembali</button>
   </form>
     <div class="container">
         <div class="card mt-3">

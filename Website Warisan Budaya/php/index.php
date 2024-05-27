@@ -28,8 +28,9 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Warisan Budaya</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Warisan Budaya</title>
+
+    <!-- icon -->
+    <link rel="icon" href="../../Website Warisan Budaya/image/icon.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -211,7 +212,7 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
                 <textarea class="form-control" name="feedback" rows="3" required></textarea>
             </div>
 
-            <button type="submit" name="sent" class="btn btn-primary">Sent</button>
+            <button type="submit" name="sent" class="btn btn-primary">Send</button>
         </form>
     </div>
     <!-- Kritik dan Saran End -->
