@@ -289,15 +289,16 @@ body {
 /* btn crud start */
 .btn-crud button {
   background-color: red;
-  color: black;
+  color: white;
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
   cursor: pointer;
 }
 
-.btn-crud button:hover{
-  background-color: rgba(255, 0, 0, 0.495);
+.btn-crud button:hover {
+  color: black;
+  background-color: rgb(236, 99, 99);
   transition: ease-in-out 0.2s;
 }
 
@@ -308,14 +309,17 @@ body {
 .container-saran {
   background-color: #999999;
   padding: 30px;
+  background-image: linear-gradient(white, black);
 }
 
 .container-saran h2 {
   font-weight: bold;
+  color: rgb(54, 54, 54);
 }
 
 .container-saran label {
   font-weight: 400;
+  color: rgb(46, 46, 46);
 }
 
 .container-saran input,
@@ -323,22 +327,24 @@ textarea {
   width: 100%;
   padding: 10px;
   border-radius: 10px;
+  color: rgb(54, 54, 54);
 }
 
 .container-saran .input {
   margin-bottom: 20px;
+  color: rgb(54, 54, 54);
 }
 
 .container-saran button {
   border-radius: 10px;
   padding: 10px;
-  color: white;
-  background-color: blue;
+  color: black;
+  background-color: rgb(175, 174, 174);
   cursor: pointer;
 }
 
 .container-saran button:hover {
-  background-color: rgba(0, 0, 255, 0.46);
+  background-color: rgb(255, 255, 255);
   transition: ease-in-out 0.2s;
 }
 
