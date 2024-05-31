@@ -59,7 +59,7 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
                 <li>
                     <a href="#informasi" id="chevron-down">Kategori<i data-feather="chevron-down"></i>
                         <ul class="dropdown">
-                            <li><a href="Musium/content.php">Musium</a></li>
+                            <li><a href="Musium/content_museum.php">Musium</a></li>
                             <li><a href="#">Tarian</a></li>
                             <li><a href="#">Bangunan</a></li>
                         </ul>

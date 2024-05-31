@@ -79,7 +79,7 @@ $museumSumba = '../../image/museumsumba.jpg';
 
         <article class="card">
             <div class="card-img"></div>
-            <a href="Blog/Pulau Kalimantan/kalimantan Timur/museumMulawarman.php">
+            <a href="../Blog/Pulau Kalimantan/kalimantan Timur/museumMulawarman.php">
                 <div class="card-img-hover" style="background-image: url('<?php echo $museumMulawarman; ?>')">
                 </div>
             </a>
