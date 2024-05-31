@@ -53,13 +53,13 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
 
         <div class="navbar-nav">
             <ul>
-                <li><a href="home">Beranda</a></li>
+                <li><a href="index.php">Beranda</a></li>
                 <li><a href="#">Galeri</a></li>
                 <li><a href="#">Tentang Kami</a></li>
                 <li>
                     <a href="#informasi" id="chevron-down">Kategori<i data-feather="chevron-down"></i>
                         <ul class="dropdown">
-                            <li><a href="#">Musium</a></li>
+                            <li><a href="Musium/content.php">Musium</a></li>
                             <li><a href="#">Tarian</a></li>
                             <li><a href="#">Bangunan</a></li>
                         </ul>
@@ -226,7 +226,7 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
 
     <!-- Feather Icons -->
     <script>
-        feather.replace();
+    feather.replace();
     </script>
 
 
@@ -234,7 +234,7 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
+    </script>
 </body>
 
 </html>
