@@ -1,3 +1,4 @@
+<!-- komen -->
 <?php
 // memanggil koneksi database
 include "koneksi.php";
