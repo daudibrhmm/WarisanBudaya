@@ -1,25 +1,3 @@
-<?php
-// memanggil koneksi database
-include "koneksi.php";
-include "crud.php";
-
-
-// Jika tombol ditekan
-if (isset($_POST['redirect'])) {
-    // Pindahkan pengguna ke halaman lain
-    header("Location: halaman_edit.php");
-    exit;
-}
-
-//bacground image
-$monas = '../../Website Warisan Budaya/image/monas.jpg';
-$rumahGadang = '../../Website Warisan Budaya/image/rumahGadang.jpg';
-$museumMulawarman = '../../Website Warisan Budaya/image/museummulawarman.jpg';
-$bentengRotterdam = '../../Website Warisan Budaya/image/bentengrotterdam.jpg';
-$bentengFortDuBus = '../../Website Warisan Budaya/image/bentengfortdubus.jpg';
-$museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,7 +21,7 @@ $museumSumba = '../../Website Warisan Budaya/image/museumsumba.jpg';
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- My Styles -->
-    <link rel="stylesheet" href="../../Website Warisan Budaya/CSS/styles.css" />
+    <link rel="stylesheet" href="./../../css/styles.css" />
 </head>
 
 <body>
